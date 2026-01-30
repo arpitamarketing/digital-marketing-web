@@ -1,0 +1,254 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Marketing By Arpita</title>
+
+    <!-- Google Font -->
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;800&display=swap" rel="stylesheet">
+
+    <link rel="stylesheet" href="dmstyle.css">
+</head>
+
+<body>
+
+    <!--  TOP BAR  -->
+    <div class="topbar">
+
+        <div class="top-left">
+            We Will Grow Your Small Business To The Next Level 🚀
+        </div>
+
+        <div class="top-right">
+            📞 +91 8587885572 &nbsp;&nbsp; | &nbsp;&nbsp; ✉ marketingbyarpita@gmail.com
+        </div>
+
+    </div>
+
+
+    <!-- NAVBAR  -->
+    <header class="navbar">
+
+        <div class="logo">
+            Marketing<span>ByArpita</span>
+        </div>
+
+        <nav>
+            <a href="dm.html">Home</a>
+            <a href="about us.html">About Us</a>
+            <a href="services.html">Services</a>
+            <a href="portfolio.html">Portfolio</a>
+            <a href="#">Blog</a>
+            <a href="Contact.html">Contact</a>
+        </nav>
+
+        <button class="btn-nav">Contact Us →</button>
+
+    </header>
+    <!--  HERO -->
+    <section class="contact-hero">
+        <div class="contact-hero-overlay">
+            <h1>Contact Us</h1>
+            <p>Home • Contact</p>
+        </div>
+    </section>
+
+
+
+    <!--  CONTACT SECTION  -->
+    <section class="contact-section">
+
+        <div class="contact-grid">
+
+            <!-- LEFT INFO -->
+            <div class="contact-info">
+
+                <h2>Contact with the team</h2>
+                <p>Let’s discuss your project and grow your business online.</p>
+
+                <div class="info-box">
+                    📍 <strong>Location</strong>
+                    <span>India</span>
+                </div>
+
+                <div class="info-box">
+                    📞 <strong>Phone</strong>
+                    <span>+91 8587885572</span>
+                </div>
+
+                <div class="info-box">
+                    ✉ <strong>Email</strong>
+                    <span>marketingbyarpita@gmail.com</span>
+                </div>
+
+            </div>
+
+
+
+            <!-- RIGHT FORM -->
+            <div class="contact-form">
+
+                <form id="contactForm">
+
+                    <div>
+                        <input type="text" id="name" placeholder="Your Name">
+                        <span class="error" id="nameError"></span>
+                    </div>
+
+                    <div>
+                        <input type="email" id="email" placeholder="Your Email">
+                        <span class="error" id="emailError"></span>
+                    </div>
+
+                    <div>
+                        <input type="text" id="phone" placeholder="Phone">
+                    </div>
+
+                    <div>
+                        <input type="text" id="subject" placeholder="Subject">
+                    </div>
+
+                    <div>
+                        <textarea id="message" placeholder="Message"></textarea>
+                        <span class="error" id="messageError"></span>
+                    </div>
+
+                    <button class="btn-primary">Send Message →</button>
+                    <p id="successMsg"></p>
+                </form>
+
+            </div>
+
+        </div>
+
+    </section>
+
+    <!--  MAP  -->
+    <section class="map">
+        <iframe
+            src="https://maps.google.com/maps?q=Packpr%20food%20delivery%20bags&t=&z=14&ie=UTF8&iwloc=&output=embed">
+        </iframe>
+
+    </section>
+
+
+
+    <!-- FOOTER  -->
+    <footer class="footer">
+
+        <div class="footer-grid">
+
+            <!-- Column 1 -->
+            <div class="footer-col">
+                <h2 class="footer-logo">Marketing<span>ByArpita</span></h2>
+
+                <h3>Let’s Talk With Me!</h3>
+
+                <p>
+                    Helping brands grow with digital marketing,
+                    social media and performance ads.
+                </p>
+
+                <div class="socials">
+                    <a href="#">f</a>
+                    <a href="#">x</a>
+                    <a href="#">in</a>
+                </div>
+            </div>
+
+
+
+            <!-- Column 2 -->
+            <div class="footer-col">
+                <h4>Quick Links</h4>
+                <ul>
+                    <li><a href="#">About Us</a></li>
+                    <li><a href="#">Services</a></li>
+                    <li><a href="#">Portfolio</a></li>
+                    <li><a href="#">Blog</a></li>
+                    <li><a href="#">Contact</a></li>
+                </ul>
+            </div>
+
+
+
+            <!-- Column 3 -->
+            <div class="footer-col">
+                <h4>Our Services</h4>
+                <ul>
+                    <li>SEO Optimization</li>
+                    <li>Social Media Marketing</li>
+                    <li>Google Ads</li>
+                    <li>Website Design</li>
+                    <li>Digital Marketing</li>
+                </ul>
+            </div>
+
+
+
+            <!-- Column 4 -->
+            <div class="footer-col">
+                <h4>Help & Support</h4>
+
+                <p>📍 India</p>
+                <p>📞 +91 98765 43210</p>
+                <p>✉ marketingbyarpita@gmail.com</p>
+            </div>
+
+        </div>
+
+
+
+        <!-- Bottom bar -->
+        <div class="footer-bottom">
+            © 2026 MarketingByArpita. All Rights Reserved.
+        </div>
+
+    </footer>
+    <script>
+
+        document.getElementById("contactForm").onsubmit = function (e) {
+
+            e.preventDefault();
+
+            let name = document.getElementById("name").value;
+            let email = document.getElementById("email").value;
+            let phone = document.getElementById("phone").value;
+            let message = document.getElementById("message").value;
+
+            document.getElementById("nameError").innerText = "";
+            document.getElementById("emailError").innerText = "";
+            document.getElementById("messageError").innerText = "";
+            document.getElementById("successMsg").innerText = "";
+
+            let ok = true;
+
+            if (name == "") {
+                document.getElementById("nameError").innerText = "Name required";
+                ok = false;
+            }
+
+            if (email == "") {
+                document.getElementById("emailError").innerText = "Email required";
+                ok = false;
+            }
+
+            if (message == "") {
+                document.getElementById("messageError").innerText = "Message required";
+                ok = false;
+            }
+
+            if (ok) {
+                document.getElementById("successMsg").innerText = "✅ Message sent successfully!";
+                document.getElementById("contactForm").reset();
+            }
+
+        }
+    </script>
+
+
+</body>
+
+</html>
